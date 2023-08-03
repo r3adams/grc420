@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Color-Managed Workflow</title>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed&display=swap" rel="stylesheet"> 
+<script>
+  $( function() {
+    $( ".icon" ).draggable();
+  } );
+</script>
+<style>
+    body {
+        background: whitesmoke;
+    } #page {
+        width: 1024px;
+        height: 1768px;
+        margin: 24px auto;
+        background: white;
+    } #items {
+        width: 768px;
+        margin: 24px auto;
+    } #workflow {
+        height: 768px;
+    } h1 {
+        font: 36pt/1.4em Lobster;
+        text-align: center;
+        text-shadow: 1px 2px 3px orange;
+        padding-top: 36px;
+    } h2 {
+        font: bold 14pt/1.0em 'Roboto Condensed';
+        display: inline-block;
+        padding: 0 12px 0 0;
+    } p {
+        font: 13pt/1.4em Georgia;
+        width: 768px;
+        margin: 24px auto;
+    } table {
+        width: 478px;
+        margin: 24px auto;
+        padding: 12px;
+        background: gainsboro;
+        font: 14pt/1.4em Georgia;
+    } input {
+        width: 300px;
+        font: 14pt/1.4em Georgia;
+    } .icon {
+        // display: block;
+    } .arrow {
+        width: 80px;
+    } #camera {
+        width: 100px;
+    } #drive {
+        width: 80px;
+    } #desktop, #inkjet, #press {
+        width: 150px;
+    } 
+</style>
+</head>
+
+<body>
+    <div id="page">
+    <h1>Color Management Workflow</h1>
+    <p><b>Instructions</b><br/>
+            1. Drag the equipment icons, arrows, and profiles around to create a color-managed workflow.<br/>
+            2. In the table below, identify each profile as source, destination, simulation, or multiple types.<br/>
+            3. Save a screen capture of your completed diagram, as the positions will reset when the page is reloaded.
+    </p>
+    <div id="items">
+    <img class="icon" id="camera" src="camera.png" />
+    <img class="icon" id="desktop" src="desktop.png" />
+    <img class="icon" id="drive" src="hard-drive.png" />
+    <img class="icon" id="inkjet" src="inkjet.png" />
+    <img class="icon" id="press" src="heat-press.png" /><br/>
+    <img class="icon arrow" id="arrow-right" src="arrow-right.jpg" />
+    <img class="icon arrow" id="arrow-left" src="arrow-left.jpg" />
+    <img class="icon arrow" id="arrow-down" src="arrow-down.jpg" />
+    <img class="icon arrow" id="arrow-up" src="arrow-up.jpg" /><br/>
+    <h2 class="icon">Camera Profile</h2>
+    <h2 class="icon">Working Space Profile</h2>
+    <h2 class="icon">Monitor Profile</h2>
+    <h2 class="icon">Proofer Profile</h2>
+    <h2 class="icon">Press Profile</h2>
+    </div>
+    <div id="workflow">
+    </div>
+    <table>
+        <form>
+        <tr><th>Profile</th><th>Type</th></tr>
+        <tr><td>Digital Camera</td><td><input type="text"></td></tr>
+        <tr><td>File</td><td><input type="text"></td></tr>
+        <tr><td>Monitor</td><td><input type="text"></td></tr>
+        <tr><td>Proofer</td><td><input type="text"></td></tr>
+        <tr><td>Press</td><td><input type="text"></td></tr>
+        </form>
+        <tr><td colspan="2"><i style="font: italic 10pt/1.4em Georgia;">Icons courtesy of flaticon.com</i></td></tr>
+    </table>
+</div>
+</body>
+</html>
