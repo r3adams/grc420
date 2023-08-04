@@ -16,7 +16,7 @@
         background: whitesmoke;
     } #page {
         width: 1024px;
-        height: 1768px;
+        height: 1448px;
         margin: 24px auto;
         background: white;
     } #items {
@@ -31,7 +31,7 @@
         text-shadow: 1px 2px 3px orange;
         padding-top: 36px;
     } h2 {
-        font: bold 14pt/1.0em 'Roboto Condensed';
+        font: bold 14pt/1.2em 'Roboto Condensed';
         display: inline-block;
         padding: 0 12px 0 0;
     } p {
@@ -49,6 +49,12 @@
         font: 14pt/1.4em Georgia;
     } .icon {
         // display: block;
+    } .red {
+        color: red;
+    } .green {
+        color: green;
+    } .blue {
+        color: blue;
     } .arrow {
         width: 80px;
     } #camera {
@@ -64,9 +70,10 @@
 <body>
     <div id="page">
     <h1>Color Management Workflow</h1>
+    <p style="text-align: center;">GRC 460 &bull; Rich Adams</p>
     <p><b>Instructions</b><br/>
-            1. Drag the equipment icons, arrows, and profiles around to create a color-managed workflow.<br/>
-            2. In the table below, identify each profile as source, destination, simulation, or multiple types.<br/>
+            1. Drag the equipment icons, arrows, and profile labels around to create a color-managed workflow.<br/>
+            2. Identify each profile as source, destination, simulation, or multiple types.<br/>
             3. Save a screen capture of your completed diagram, as the positions will reset when the page is reloaded.
     </p>
     <div id="items">
@@ -75,22 +82,32 @@
     <img class="icon" id="drive" src="hard-drive.png" />
     <img class="icon" id="inkjet" src="inkjet.png" />
     <img class="icon" id="press" src="heat-press.png" /><br/>
-    <img class="icon arrow" id="arrow-right" src="arrow-right.png" />
-    <img class="icon arrow" id="arrow-right" src="arrow-right.png" />
-    <img class="icon arrow" id="arrow-left" src="arrow-left.png" />
-    <img class="icon arrow" id="arrow-down" src="arrow-down.png" />
-    <img class="icon arrow" id="arrow-up" src="arrow-up.png" />
-    <img class="icon arrow" id="arrow-45" src="arrow-45.png" />
-    <img class="icon arrow" id="arrow--45" src="arrow--45.png" />
+    <img class="icon arrow" src="arrow-right.png" />
+    <img class="icon arrow" src="arrow-right.png" />
+    <img class="icon arrow" src="arrow-left.png" />
+    <img class="icon arrow" src="arrow-down.png" />
+    <img class="icon arrow" src="arrow-up.png" />
+    <img class="icon arrow" src="arrow-up.png" />
+    <img class="icon arrow" src="arrow-45.png" />
+    <img class="icon arrow" src="arrow--45.png" />
     <br/>
     <h2 class="icon">Camera Profile</h2>
-    <h2 class="icon">Working Space Profile</h2>
+    <h2 class="icon">Working Space<br/>Profile</h2>
     <h2 class="icon">Monitor Profile</h2>
     <h2 class="icon">Proofer Profile</h2>
     <h2 class="icon">Press Profile</h2>
+    <br/>
+    <h2 class="icon red">Source</h2>
+    <h2 class="icon red">Source</h2>
+    <h2 class="icon green">Destination</h2>
+    <h2 class="icon green">Destination</h2>
+    <h2 class="icon green">Destination</h2>
+    <h2 class="icon green">Destination</h2>
+    <h2 class="icon blue">Simulation</h2>
     </div>
     <div id="workflow">
     </div>
+    <!--
     <table>
         <form>
         <tr><th>Profile</th><th>Type</th></tr>
@@ -102,6 +119,7 @@
         </form>
         <tr><td colspan="2"><i style="font: italic 10pt/1.4em Georgia;">Icons courtesy of flaticon.com</i></td></tr>
     </table>
+    -->
 </div>
 </body>
 </html>
