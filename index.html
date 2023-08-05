@@ -38,6 +38,29 @@
         font: 13pt/1.4em Georgia;
         width: 768px;
         margin: 24px auto;
+    } ul {
+        width: 640px;
+        margin: 24px auto;
+        padding-bottom: 48px;
+    } li {
+        width: 33.0%;
+        height: 16px;
+        font: 12pt/1.0em 'Roboto Condensed';
+        text-align: center;
+        list-style: none;
+        float: left;
+        padding: 12px 0;
+        background: gainsboro;
+    } li:nth-child(2) {
+        border-left: 1px solid white;
+    } li:nth-child(2) {
+        border-left: 1px solid white;
+    } a li {
+        background: gainsboro;
+        color: black;
+    } a li:hover {
+        background: lightgray;
+        box-shadow: 2px 1px 3px darkgray;
     } table {
         width: 478px;
         margin: 24px auto;
@@ -63,19 +86,29 @@
         width: 80px;
     } #desktop, #inkjet, #press {
         width: 150px;
-    } 
+    } #print {
+        background: lightgreen;
+        border-left: 1px solid white;
+    } #print:hover {
+        box-shadow: 2px 3px 6px darkgray;
+    }
 </style>
 </head>
 
 <body>
     <div id="page">
     <h1>Color Management Workflow</h1>
-    <p style="text-align: center;">GRC 460 &bull; Rich Adams<br/>
+    <p style="text-align: center; margin-top: -18px;">GRC 460 &bull; Rich Adams<br/>
     <i style="font: italic 10pt/1.4em Georgia;">Icons courtesy of flaticon.com</i></p>
+    <ul>
+        <li>Color-Managed Workflow</li>
+        <a href="4cs.html"><li>4 &ldquo;C&rdquo;s of Color Management</li></a>
+        <li id="print" onClick="window.print();">Print Page</li>
+    </ul>
     <p><b>Instructions</b><br/>
             1. Drag the equipment icons, arrows, and profile labels around to create a color-managed workflow.<br/>
-            2. Identify each profile as source, destination, simulation, or multiple types.<br/>
-            3. Save a screen capture of your completed diagram, as the positions will reset when the page is reloaded.
+            2. Identify each profile as source, destination, simulation, or a combination types.<br/>
+            3. Print your completed page to PDF using the green &ldquo;Print Page&rdquo; button (or by saving a screen capture. Entries will reset when the page is reloaded.
     </p>
     <div id="items">
     <img class="icon" id="camera" src="camera.png" />

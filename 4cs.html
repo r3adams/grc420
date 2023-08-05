@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Color-Managed Workflow</title>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed&display=swap" rel="stylesheet"> 
+<style>
+    body {
+        background: whitesmoke;
+    } #page {
+        width: 1024px;
+        height: 1448px;
+        margin: 24px auto;
+        background: white;
+    } #items {
+        width: 1024px;
+        margin: 24px auto;
+        text-align: center;
+    } #workflow {
+        height: 768px;
+    } h1 {
+        font: 36pt/1.4em Lobster;
+        text-align: center;
+        text-shadow: 1px 2px 3px orange;
+        padding-top: 36px;
+    } h2 {
+        font: bold 14pt/1.2em 'Roboto Condensed';
+        display: inline-block;
+        padding: 0 12px 0 0;
+    } p {
+        font: 13pt/1.4em Georgia;
+        width: 768px;
+        margin: 24px auto 48px auto;
+    } ul {
+        width: 640px;
+        margin: 24px auto;
+        padding-bottom: 48px;
+    } li {
+        width: 33.0%;
+        height: 16px;
+        font: 12pt/1.0em 'Roboto Condensed';
+        text-align: center;
+        list-style: none;
+        float: left;
+        padding: 12px 0;
+        background: gainsboro;
+    } li:nth-child(2) {
+        border-left: 1px solid white;
+    } a li {
+        background: gainsboro;
+        color: black;
+    } a li:hover {
+        background: lightgray;
+        box-shadow: 1px 2px 3px gray;
+    } table {
+        width: 768px;
+        margin: 24px auto;
+        padding: 12px;
+        background: gainsboro;
+        font: 13pt/1.4em Georgia;
+    } textarea {
+        width: 200px;
+        height: 5em;
+        font: 13pt/1.2em Georgia;
+    } #cs {
+        width: 324px;
+        float: left;
+        margin: 10px 24px 48px 72px;
+        filter: drop-shadow(2px 3px 6px darkgray);
+    } #camera {
+        width: 100px;
+        padding-left: 160px;
+    } #desktop {
+        width: 150px;
+        padding-left: 72px;
+    } #inkjet {
+        width: 150px;
+        padding-left: 64px;
+    } #press {
+        width: 150px;
+        padding-left: 64px;
+    } #print {
+        background: lightgreen;
+        border-left: 1px solid white;
+    } #print:hover {
+        box-shadow: 2px 3px 6px darkgray;
+    }
+</style>
+</head>
+
+<body>
+    <div id="page">
+    <h1>The 4 &ldquo;C&rdquo;s of Color Management</h1>
+    <p style="text-align: center; margin-top: -18px;">GRC 460 &bull; Rich Adams<br/>
+    <i style="font: italic 10pt/1.4em Georgia;">Icons courtesy of flaticon.com</i></p>
+    <ul>
+        <a href="index.html"><li>Color-Managed Workflow</li></a>
+        <li>4 &ldquo;C&rdquo;s of Color Management</li>
+        <li id="print" onClick="window.print();">Print Page</li>
+    </ul>
+    <img id="cs" src="4Cs.png" />
+    <p><b>The 4 Cs</b><br/>
+            The 4 Cs model refers to a process of setting up and adjusting color reproduction equipment for the most accurate and consistent color, ensuring that each device performs at its best. The 4Cs are depicted in a hierarchy where lower steps must be done first.
+    </p>
+    <p><b>Instructions</b><br/>
+            1. Write the steps necessary to optimize, calibrate, profile and convert color for each device.<br/>
+            2. Print your completed page to PDF using the green &ldquo;Print Page&rdquo; button (or by saving a screen capture. Entries will reset when the page is reloaded.
+    </p>
+    <div id="items">
+    <img id="camera" src="camera.png" />
+    <img id="desktop" src="desktop.png" />
+    <img id="inkjet" src="inkjet.png" />
+    <img id="press" src="heat-press.png" /><br/>
+    </div>
+    <table>
+        <form>
+        <tr><th>Step</th><th>Camera</th><th>Monitor</th><th>Proofer</th><th>Press</th></tr>
+        <tr><td>Consistency<br/>(Optimization)</td>
+            <td><textarea rows="4"></textarea></td>
+            <td><textarea rows="4"></textarea></td>
+            <td><textarea rows="4"></textarea></td>
+            <td><textarea rows="4"></textarea></td>
+        </tr>
+        <tr><td>Calibration<br/>(Linearization)</td>
+            <td><textarea rows="4"></textarea></td>
+            <td><textarea rows="4"></textarea></td>
+            <td><textarea rows="4"></textarea></td>
+            <td><textarea rows="4"></textarea></td>
+        </tr>
+        <tr><td>Characterization<br/>(Profiling)</td>
+            <td><textarea rows="4"></textarea></td>
+            <td><textarea rows="4"></textarea></td>
+            <td><textarea rows="4"></textarea></td>
+            <td><textarea rows="4"></textarea></td>
+        </tr>
+        <tr>
+            <td>Conversion<br/>(Color Change)</td>
+            <td><textarea rows="4"></textarea></td>
+            <td><textarea rows="4"></textarea></td>
+            <td><textarea rows="4"></textarea></td>
+            <td><textarea rows="4"></textarea></td>
+        </tr>
+        </form>
+    </table>
+</div>
+</body>
+</html>
