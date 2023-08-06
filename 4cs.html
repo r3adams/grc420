@@ -87,6 +87,11 @@
         border-left: 1px solid white;
     } #print:hover {
         box-shadow: 2px 3px 6px darkgray;
+    } @media only print {
+        body {
+            max-width: 95%;
+            max-height: 95%;
+        }
     }
 </style>
 </head>
