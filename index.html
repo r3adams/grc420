@@ -18,12 +18,12 @@
     } body {
         background: whitesmoke;
     } #page {
-        width: 1024px;
-        height: 1448px;
+        width: 1248px;
+        height: 2056px;
         margin: 24px auto;
         background: white;
     } #items {
-        width: 768px;
+        width: 1180px;
         margin: 24px auto;
         text-align: center;
     } #workflow {
@@ -86,13 +86,13 @@
     } .blue {
         color: blue;
     } .arrow {
+        width: 64px;
+    } .w80 {
         width: 80px;
-    } #camera {
+    } .w100 {
         width: 100px;
-    } #drive {
-        width: 80px;
-    } #desktop, #inkjet, #press {
-        width: 150px;
+    } .w124 {
+        width: 124px;
     } #print {
         background: lightgreen;
         border-left: 1px solid white;
@@ -112,7 +112,7 @@
     <div id="page">
     <p id="name">Name&nbsp;<input type="text"></p>
     <h1>Color Management Workflow</h1>
-    <p style="text-align: center; margin-top: -18px;">GRC 460 &bull; Rich Adams<br/>
+    <p style="text-align: center; margin-top: -18px;">GRC 420 &bull; Rich Adams<br/>
     <i style="font: italic 10pt/1.4em Georgia;">Icons courtesy of flaticon.com</i></p>
     <ul>
         <li>Color-Managed Workflow</li>
@@ -125,11 +125,18 @@
             3. Print your completed page to PDF using the green &ldquo;Print Page&rdquo; button (or by saving a screen capture. Entries will reset when the page is reloaded.
     </p>
     <div id="items">
-    <img class="icon" id="camera" src="camera.png" />
-    <img class="icon" id="desktop" src="desktop.png" />
-    <img class="icon" id="drive" src="hard-drive.png" />
-    <img class="icon" id="inkjet" src="inkjet.png" />
-    <img class="icon" id="press" src="heat-press.png" /><br/>
+    <img class="icon w80" id="camera1" src="camera.png" />
+    <img class="icon w80" id="camera2" src="camera.png" />
+    <img class="icon w80" id="camera3" src="camera.png" />
+    <img class="icon w100" id="desktop1" src="desktop.png" />
+    <img class="icon w100" id="desktop2" src="desktop.png" />
+    <img class="icon w100" id="desktop3" src="desktop.png" />
+    <img class="icon w80" id="drive" src="hard-drive.png" />
+    <img class="icon w124" id="inkjet1" src="inkjet1.png" />
+    <img class="icon w124" id="inkjet2" src="inkjet2.png" />
+    <img class="icon w100" id="press" src="heat-press.png" />
+    <img class="icon w100" id="flexo" src="flexo.png" /><br/>
+    <img class="icon arrow" src="arrow-right.png" />
     <img class="icon arrow" src="arrow-right.png" />
     <img class="icon arrow" src="arrow-right.png" />
     <img class="icon arrow" src="arrow-left.png" />
@@ -137,20 +144,36 @@
     <img class="icon arrow" src="arrow-up.png" />
     <img class="icon arrow" src="arrow-up.png" />
     <img class="icon arrow" src="arrow-45.png" />
+    <img class="icon arrow" src="arrow-45.png" />
+    <img class="icon arrow" src="arrow-45.png" />
     <img class="icon arrow" src="arrow--45.png" />
+    <img class="icon arrow" src="arrow--45.png" />
+    <img class="icon arrow" src="arrow--45.png" />
+    <img class="icon arrow" src="arrow-90.png" />
+    <img class="icon arrow" src="arrow-90.png" />
     <br/>
+    <h2 class="icon">Camera Profile</h2>
+    <h2 class="icon">Camera Profile</h2>
     <h2 class="icon">Camera Profile</h2>
     <h2 class="icon">Working Space<br/>Profile</h2>
     <h2 class="icon">Monitor Profile</h2>
+    <h2 class="icon">Monitor Profile</h2>
+    <h2 class="icon">Monitor Profile</h2>
     <h2 class="icon">Proofer Profile</h2>
+    <h2 class="icon">Proofer Profile</h2>
+    <h2 class="icon">Press Profile</h2>
     <h2 class="icon">Press Profile</h2>
     <br/>
     <h2 class="icon red">Source</h2>
     <h2 class="icon red">Source</h2>
+    <h2 class="icon red">Source</h2>
+    <h2 class="icon red">Source</h2>
     <h2 class="icon green">Destination</h2>
     <h2 class="icon green">Destination</h2>
     <h2 class="icon green">Destination</h2>
     <h2 class="icon green">Destination</h2>
+    <h2 class="icon green">Destination</h2>
+    <h2 class="icon blue">Simulation</h2>
     <h2 class="icon blue">Simulation</h2>
     </div>
     <div id="workflow">
