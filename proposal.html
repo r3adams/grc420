@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Using Github as a Web Server</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto+Serif:wght@300;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<style>
+    body {
+        box-sizing: border-box;
+        background: whitesmoke;
+    } #page {
+        width: 928px;
+        height: auto;
+        margin: 24px auto;
+        background: white;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } h1 {
+        font: bold 24pt/1.4em 'Roboto Serif';
+        text-align: center;
+    } h2 {
+        font: 14pt/1.4em 'Roboto Condensed';
+        text-transform: uppercase;
+        text-align: left;
+        margin: 24px 0 12px 10%;
+    } span {
+        color: red;
+    } p, ol, ul {
+        font: 12pt/1.4em 'Roboto Serif';
+        width: 80%;
+        margin: 6px auto 6px auto;
+    } li {
+        margin: 8px 0 0 0;
+    } #byline {
+        font: italic 12pt/1.4em 'Roboto Serif';
+        text-align: center;
+    }
+</style>
+</head>
+
+<body>
+    <div id="page">
+    <h1>Proposal for ePub from InDesign<br/><span style="font-size: 18pt; color: black;">Hands-on Lab</span></h1>
+    <p id="byline">Rich Adams</p>
+    <h2>What’s an eBook? <span>&larr; Define the topic</span></h2>
+    <p>eBook stands for electronic book, any book-length document in electronic format designed to read on a screen. eBooks come in an industry-standard formats such as .html, .epub, or .pdf, or in proprietary formats like Amazon Kindle .azw. eBooks can include interactive content such as videos, animations, table of contents, index, and forms.</p>
+    <h2>Class Activity <span>&larr; Tell what the class will do</span></h2>
+    <p>The most common standard eBook formats are ePub and PDF, which are generally made from InDesign. While PDF is a “print replica” fixed format that can include complex page layouts, such as grouped photos with captions, ePub is a simpler layout that allows readers to choose type face and font size that’s easiest for them to read. Whereas PDF is based on the PostScript page description language for print, ePubs are basically encapsulated web pages (i.e., don’t require a WiFi connection) based on eXtensible Hypertext Markup Language (XHTML).</p>
+    <p>For the class I plan to demonstrate how to design an eBook in InDesign and export to the .epub format, considering the “Six Caveats of ePub”:
+    <ol>
+        <li>Keep it simple—Remember that ePub works best for text-heavy documents and is not well suited to complex layouts of grouped photos and diagrams with captions.</li>
+        <li>Photos—maximum 1 photo and caption per page.</li>
+        <li>Inline—All content (text and photos) must be “inline,” which means placed in a single text box using the Text or I-beam tool.</li>
+        <li>Styles—All text must have applied Paragraph Styles</li>
+        <li>Table of Contents—Create an Automatic Table of Contents Style with headings included to make a table of contents, which will automatically be placed in the table of contents tool of the ePub reader.</li>
+        <li>Cover—Design a cover and export to JPEG format, then place in the ePub using the Export dialog.</li>
+    </ol>
+    <h2>Supplied Documents <span>&larr; Files you will supply</h2>
+    <ul>
+        <li>Sample text in Word format, including 3&ndash;4 headings</li>
+        <li>3&ndash;4 photos with captions</li>
+        <li>JPEG file with cover</li>
+    </ul>
+    <h2>Abbreviated Procedure <span>&larr; Tell what the class will do</span></h2>
+    <ol>
+        <li>Open the InDesign file and define Paragraph Styles for the body text, headings, captions, and photos.</li>
+        <li>Import the Word text into the InDesign document, assigning appropriate styles.</li>
+        <li>Place the photos in appropriate locations in the text using the Text tool. Each photo should be on its own line, without any text wrap.</li>
+        <li>Define an Automatic Table of Contents (TOC) Style but do not export the TOC or place it in the text.</li>
+        <li style="margin-bottom: 48px;">Export the InDesign document to ePub-Reflowable, selecting the TOC Style and cover JPEG file.</li>
+    </ol>
+    </p>
+    </div>
+</body>
+</html>
