@@ -93,8 +93,6 @@
         width: 100px;
     } .w124 {
         width: 124px;
-    } .w136 {
-        width: 136px;
     } #print {
         background: lightgreen;
         border-left: 1px solid white;
@@ -113,53 +111,88 @@
 <body>
     <div id="page">
     <p id="name">Name&nbsp;<input type="text"></p>
-    <h1>Color Management Workflow</h1>
+    <h1>Color Management Workflow<br/>
+        <span style="display: block; font: 18pt/1.4em Lobster; padding-top: -24px;">with Multiple Devices</span></h1>
     <p style="text-align: center; margin-top: -18px;">GRC 420 &bull; Rich Adams<br/>
     <i style="font: italic 10pt/1.4em Georgia;">Icons courtesy of flaticon.com</i></p>
     <ul>
-        <li>Color-Managed Workflow</li>
-        <a href="multi.html"><li>Multiple Devices</li></a>
+        <a href="index.html"><li>Color-Managed Workflow</li>
+        <li>Multiple Devices</li></a>
         <a href="4cs.html"><li>4 &ldquo;C&rdquo;s of Color Management</li></a>
         <li id="print" onClick="window.print();">Print Page</li>
     </ul>
     <p><b>Instructions</b><br/>
-            1. Drag the equipment icons, arrows, and profile labels around to create a color-managed workflow.<br/>
-            2. Identify each profile as source, destination, simulation, or a combination of types.<br/>
-            3. Print your completed page to PDF using the green &ldquo;Print Page&rdquo; button (or by saving a screen capture). Entries will reset when the page is reloaded.
+        As with the single-device scenario under &ldquo;Color-Managed Workflow,&rdquo; the 4 C&rsquo;s of Color Management enables multiple devices to be synchronized or color-matched to the best of their abilities.<br/>
+        1. As with the single-device page, drag the equipment icons, arrows, and profile labels around to create a color-managed workflow.<br/>
+        2. Identify each profile as source, destination, simulation, or a combination of types.<br/>
+        3. Print your completed page to PDF using the green &ldquo;Print Page&rdquo; button (or by saving a screen capture). Entries will reset when the page is reloaded.
     </p>
     <div id="items">
-    <img class="icon w100" id="camera1" src="camera.png" />
-    <img class="icon w124" id="desktop1" src="desktop.png" />
+    <img class="icon w80" id="camera1" src="camera.png" />
+    <img class="icon w80" id="camera2" src="camera.png" />
+    <img class="icon w80" id="camera3" src="camera.png" />
+    <img class="icon w100" id="desktop1" src="desktop.png" />
+    <img class="icon w100" id="desktop2" src="desktop.png" />
+    <img class="icon w100" id="desktop3" src="desktop.png" />
     <img class="icon w80" id="drive" src="hard-drive.png" />
-    <img class="icon w136" id="inkjet1" src="inkjet1.png" />
-    <img class="icon w124" id="press" src="heat-press.png" />
-    <br/>
+    <img class="icon w124" id="inkjet1" src="inkjet1.png" />
+    <img class="icon w124" id="inkjet2" src="inkjet2.png" />
+    <img class="icon w100" id="press" src="heat-press.png" />
+    <img class="icon w100" id="flexo" src="flexo.png" /><br/>
     <img class="icon arrow" src="arrow-right.png" />
     <img class="icon arrow" src="arrow-right.png" />
+    <img class="icon arrow" src="arrow-right.png" />
+    <img class="icon arrow" src="arrow-left.png" />
     <img class="icon arrow" src="arrow-down.png" />
     <img class="icon arrow" src="arrow-up.png" />
     <img class="icon arrow" src="arrow-up.png" />
     <img class="icon arrow" src="arrow-45.png" />
+    <img class="icon arrow" src="arrow-45.png" />
+    <img class="icon arrow" src="arrow-45.png" />
     <img class="icon arrow" src="arrow--45.png" />
+    <img class="icon arrow" src="arrow--45.png" />
+    <img class="icon arrow" src="arrow--45.png" />
+    <img class="icon arrow" src="arrow-90.png" />
     <img class="icon arrow" src="arrow-90.png" />
     <br/>
     <h2 class="icon">Camera Profile</h2>
+    <h2 class="icon">Camera Profile</h2>
+    <h2 class="icon">Camera Profile</h2>
     <h2 class="icon">Working Space<br/>Profile</h2>
     <h2 class="icon">Monitor Profile</h2>
+    <h2 class="icon">Monitor Profile</h2>
+    <h2 class="icon">Monitor Profile</h2>
+    <h2 class="icon">Proofer Profile</h2>
     <h2 class="icon">Proofer Profile</h2>
     <h2 class="icon">Press Profile</h2>
-    <br/>
+    <h2 class="icon">Press Profile</h2>
+    <h2 class="icon red">Source</h2>
+    <h2 class="icon red">Source</h2>
     <h2 class="icon red">Source</h2>
     <h2 class="icon red">Source</h2>
     <h2 class="icon green">Destination</h2>
     <h2 class="icon green">Destination</h2>
     <h2 class="icon green">Destination</h2>
     <h2 class="icon green">Destination</h2>
+    <h2 class="icon green">Destination</h2>   <h2 class="icon green">Destination</h2>   <h2 class="icon green">Destination</h2>
     <h2 class="icon blue">Simulation</h2>
     <h2 class="icon blue">Simulation</h2>
     </div>
     <div id="workflow">
     </div>
+    <!--
+    <table>
+        <form>
+        <tr><th>Profile</th><th>Type</th></tr>
+        <tr><td>Digital Camera</td><td><input type="text"></td></tr>
+        <tr><td>File</td><td><input type="text"></td></tr>
+        <tr><td>Monitor</td><td><input type="text"></td></tr>
+        <tr><td>Proofer</td><td><input type="text"></td></tr>
+        <tr><td>Press</td><td><input type="text"></td></tr>
+        </form>
+        <tr><td colspan="2"><i style="font: italic 10pt/1.4em Georgia;">Icons courtesy of flaticon.com</i></td></tr>
+    </table>
+    -->
 </div>
 </body>
 </html>
