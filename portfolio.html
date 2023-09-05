@@ -1,0 +1,87 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Portfolio | Rich Adams</title>
+	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet"> 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    <style>
+		* {margin: 0; padding: 0;}
+		#banner {
+			width: 1228px;
+			max-width: 100%;
+			height: 184px;
+			background: lightblue;
+			margin: 0 auto;
+			font-family: Lobster;
+			color: dimgray;
+		} #banner h1 {
+			font-size: 48pt;
+			font-weight: normal;
+			line-height: 2em;
+			text-align: center;
+		} #banner h3 {
+			font-size: 24pt;
+			font-weight: normal;
+			text-align: center;
+			line-height: 1.0em;
+		} #page {
+			width: 1228px;
+			max-width: 100%;
+			height: 921px;
+			margin: 0 auto;
+			background: whitesmoke;
+			padding-top: 48px;
+		} #flexbox {
+			width: 1228px;
+			max-width: 90%;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			border: 1px dotted gray;
+		} .thumb {
+			width: 232px;
+			height: auto;
+			display: inline-block;
+			margin: 12px;
+			transition: transform 0.3s;
+            border: 1px solid darkgray;
+            box-shadow: 2px 3px 6px lightgray;
+		} .thumb:hover {
+            transform: scale(1.05);
+		} figcaption {
+            font: italic 12pt/1.4em Roboto;
+			width: 232px;
+			padding: 6px;
+		} @media only screen and (max-width: 750px) {
+			#banner {
+				height: 48vw;
+				font-size: 8vw;
+				line-height: 24vw;
+			}
+		}
+    </style>
+    </head>
+    <body>
+	 <div id="banner">
+		<h1>Portfolio</h1>
+		<h3>Rich Adams</h3>
+	</div>
+	<div id="page">
+	<div id="flexbox">
+	<figure>
+	<a href="https://pressbooks.library.ryerson.ca/ebooks/" target="_blank"><img class="thumb" src="eBookCover-464-after.jpg" /></a>
+	<figcaption>Explains how to create and edit eBooks with various software, including special effects and media.</figcaption>
+	</figure>
+	<figure>
+	<a href="https://r3adams.github.io/grc420/index.html" target="_blank"><img class="thumb" src="FF-W_CMSWorkflow.jpg" /></a>
+	<figcaption>Interactive web page that allows users to drag-and-drop icons to create a color-managed workflow.</figcaption>
+	</figure>
+	<figure>
+	<a href="https://r3adams.github.io/grc420/4cs.html" target="_blank"><img class="thumb" src="FF-W_4CsOfCMS.jpg" /></a>
+	<figcaption>Web page that allows users to write out how to implement the &ldquo;4 Cs&rdquo; of color management for main devices in a print workflow.</figcaption>
+	</figure>
+	</div>
+	</div>
+    </body>
+    </html>
