@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ePub from InDesign</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto+Serif:wght@300;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<style>
+    * {
+        box-sizing: border-box;
+    } main {
+        width: 778px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 8px;
+        margin: 48px auto;
+    } #github {
+        background: whitesmoke;
+        padding: 12px;
+    } img {
+        width: 200px;
+        height: auto;
+        box-shadow: 2px 3px 6px gray;
+        margin-top: 24px;
+    } img.w200 {
+        width: 200px;
+    } img.w360 {
+        width: 360px;
+    } h1 {
+        font: bold 24pt/1.4em 'Roboto Serif';
+        text-align: center;
+    } h2 {
+        font: 14pt/1.4em 'Roboto Condensed';
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 12px;
+    } h3 {
+        font: 12pt/1.4em 'Roboto Condensed';
+        text-transform: uppercase;
+        text-align: left;
+        margin-bottom: 0;
+        color: dimgray;
+    } p, ol {
+        font: 12pt/1.4em 'Roboto Serif';
+        width: 100%;
+        margin: 4px auto 4px auto;
+    } li {
+        margin: 8px 0 0 0;
+    } ul {
+        font: 12pt/1.4em 'Roboto Serif';
+    } p.link {
+        text-align: center;
+        margin-top: 6px;
+    } ul li {
+        margin-top: 3px;
+    } #sidebar {
+        margin: 36px 0 0 24px;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+        padding: 12px;
+    } #sidebar p {
+        font: 10pt/1.4em 'Roboto Serif';
+    }
+</style>
+</head>
+
+<body>
+    <h1>ePub from InDesign</h1>
+
+    <main>
+        <div id="github">
+          <img class="w200" style="margin-top: 0;" src="eBook_1_Document.jpg" />
+          <img class="w200" style="float: right;" src="eBook_2_ParagraphStyles.jpg" />
+          <img class="w360" src="eBook_3_TOCStyle.jpg" />
+          <img class="w360" src="eBook_4_Inline.jpg" />
+          <img class="w360" src="eBook_5_ObjectExportOptions.jpg" />
+          <img class="w360" src="eBook_6_Export.jpg" />
+       </div>
+        <div id="github-instr">
+            <p>ePub is an open standard for eBooks based on XHTML, meaning they are essentially encapsulated web pages. ePubs are easy to create in InDesign and have specific requirements.</p>
+        <ol>
+            <li>In InDesign, create a new document with:
+            <ul style="margin-bottom: 6px;">
+            <li>Size 384&thinsp;&times;&thinsp;512px</li>
+            <li>Uncheck Facing Pages</li>
+            <li>Check Primary Text Frame</li>
+            </ul>
+            Although document size is irrelevant because &ldquo;pages&rdquo; will be made by the eBook reader, the document will appear in InDesign approximately as it will look on an iPad.
+            </li>
+            <li>All text must be styled. Create Paragraph Styles for body text, images, and at least one heading.</li>
+            <li>Set up an automatic table of contents (TOC) style (Layout &gt; Table of Contents Style) with the headings in it. Do not generate text for the TOC; the style will be picked up by the eBook reader.</li>
+            <li>Import the text from a Word or text file. Ideally the text should have styles predefined in Word, which can be mapped to your InDesign Styles.</li>
+            <li>Draw picture boxes with the desired width of your images, then place the images. Select Object &gt; Fitting &gt; Size Content Proportionally, then Size Box to Content. Cut each image to the Clipboard, then place inline in the text using the Text or I-beam tool. Note the anchor icon at the upper right of the image, showing it is inline.</li>
+            <li>InDesign will shrink your images on output. For full-width images, right-click and select Object Export Options. Set the Size to Custom Width 100%.</li>
+            <li>When ready to export your ePub, select File &gt; Export &gt; ePub-Reflowable, specifying your cover graphic, TOC Style, and chapter split options.</li>
+            </ol>
+        <h2>Related Skills</h2>
+        <ul>
+            <li>Editing an ePub in <a href="https://sigil-ebook.com">Sigil</a> to create <a href="https://www.torontomu.ca/~wdp/design-effects/design-effects.html">special effects</a></li>
+            <li>Amazon AZW layout in <a href="https://www.amazon.com/kindle-create">Kindle Create</a></li>
+            <li>Creating interactive PDF in InDesign</li>
+        </ul>
+        <div id="sidebar">
+        <h2>Recommended ePub Styles</h2>
+    
+        <p>The Paragraph Styles are named after the tags they apply to in XHTML.</p>
+        <h3>p</h3>
+        <p>Basic Character Formats — Palatino Regular 14/auto<br/>
+        Indents and Spacing — 6px Space Before ¶<br/>
+        Keep Options — Keep 2 lines together<br/>
+        Export Tagging — Tag p, Include Classes in HTML, Emit CSS</p>
+        <p>
+        <h3>h1</h3>
+        <p>Basic Character Formats — Palatino Bold 24/auto<br/>
+        Keep Options — Keep with Next, Start ¶ on Next Page<br/>
+        Character Color — Choose color<br/>
+        Export Tagging — Tag h1, Include Classes in HTML, Emit CSS, Split Document
+        </p>
+        <h3>h2</h3>
+        <p>Basic Character Formats — Palatino Bold 18/auto<br/>
+        Keep Options — Keep with Next 2 Lines<br/>
+        Character Color — Choose color<br/>
+        Export Tagging — Tag h2, Include Classes in HTML, Emit CSS
+        </p>
+        <h3>img</h3>
+        <p>Basic Character Formats — Palatino Bold 14/auto<br/>
+        Indents and Spacing — Align Center<br/>
+        Export Tagging — Tag p, Include Classes in HTML, Emit CSS
+        </p>
+        <h3>figcaption</h3>
+        <p>Basic Character Formats — Palatino Italic 12/auto<br/>
+        Indents and Spacing — Left indent 36px, Right indent 36px, Text Align Center<br/>
+        Keep options — Keep with Previous<br/>
+        Export Tagging — Tag p, Include Classes in HTML, Emit CSS
+        </p>
+        </div>
+        </div>
+    </main>
+</body>
+</html>
