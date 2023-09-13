@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ePub from InDesign</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto+Serif:wght@300;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<style>
+    * {
+        box-sizing: border-box;
+    } main {
+        width: 778px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 8px;
+        margin: 48px auto;
+    } #github {
+        background: whitesmoke;
+        padding: 12px;
+    } img {
+        width: 200px;
+        height: auto;
+        box-shadow: 2px 3px 6px gray;
+        margin-top: 24px;
+    } img.w200 {
+        width: 240px;
+    } img.w360 {
+        width: 360px;
+    } h1 {
+        font: bold 24pt/1.4em 'Roboto Serif';
+        text-align: center;
+    } h2 {
+        font: 14pt/1.4em 'Roboto Condensed';
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 12px;
+    } h3 {
+        font: 12pt/1.2em 'Roboto Condensed';
+        text-transform: uppercase;
+        text-align: left;
+        margin: 24px 0 6px 0;
+        color: dimgray;
+    } p {
+        font: 12pt/1.45em 'Roboto Serif';
+        list-style: none;
+        width: 100%;
+        margin: 0px auto 4px auto;
+    } p.link {
+        text-align: center;
+        margin-top: 6px;
+    }
+</style>
+</head>
+
+<body>
+    <h1>Long Document Features of InDesign</h1>
+
+    <main>
+        <div id="github">
+            <img class="w200" src="1_ID-P_Book.jpg" />
+            <img style="float: right;" class="w200" src="2_ID-P_Library.jpg" />
+            <img class="w360" src="3_ID-DB_TOC.jpg" />
+            <img style="float: right;" class="w200" src="4_ID-P_MasterPages.jpg" />
+            <img class="w360" src="5_ID-DB_SaveAsTemplate.jpg" />
+            <img style="float: right;" class="w200" src="6_ID-P_Styles.jpg" />
+            <img class="w200" src="7_ID-P_Index.jpg" />
+       </div>
+        <div id="github-instr">
+            <p>Adobe InDesign has a number of features that are useful in designing long documents, such as books, magazines, reports, and the like. Chapters may be saved in separate documents that can be linked together using the Book Palette.</p>
+            
+            <h3>Book Palette</h3>
+            <p>File &gt; New Book (file type .indb). A palette that organizes multiple chapters in individual InDesign documents. The palette can be used to number, print, and save the chapters.</p>
+           <h3>Library</h3>
+            <p>File &gt; New Library (.indl). A floating palette that can be opened in multiple documents and hold commonly used images and text.</p>
+            <h3>Table of Contents</h3>
+            <p>Layout &gt; Table of Contents. A dialog box used to create an automatic table of contents by taking text of specified styles.</p>
+            <h3>Master Pages</h3>
+            <p>Window &gt; Pages. Pages whose content is copied to multiple subsidiary pages. Can hold headers, footers, page numbers, and repeating text.</p>
+            <h3>Templates</h3>
+            <p>File &gt; Save As &gt; Template (.indt). A preformatted document that can be distributed to multiple users. When saved, will prompt the user for a new name, like a Save As dialog box.</p>
+            <h3>Styles</h3>
+            <p>Window &gt; Styles. Includes Paragraph, Character, Object, and Table Styles.</p>
+            <h3>Index</h3>
+            <p>Window &gt; Type and Tables &gt; Index. Designers can designate keywords by hlighting in text and selecting Insert in Index, then an alphabetical list can be generated.d</p>
+            <h3>Tables</h3>
+            <p>Table &gt; Create Table. Useful for organizing text in a grid, designers can insert and delete rows and columns and apply Table Styles with background and border colors and lines.</p>
+        </div>
+    </main>
+</body>
+</html>
