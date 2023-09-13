@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ePub from InDesign</title>
+<title>Long Document Features of InDesign</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto+Serif:wght@300;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
         box-shadow: 2px 3px 6px gray;
         margin-top: 24px;
     } img.w200 {
-        width: 200px;
+        width: 240px;
     } img.w360 {
         width: 360px;
     } h1 {
@@ -38,104 +38,55 @@
         text-align: center;
         margin-top: 12px;
     } h3 {
-        font: 12pt/1.4em 'Roboto Condensed';
+        font: 12pt/1.2em 'Roboto Condensed';
         text-transform: uppercase;
         text-align: left;
-        margin-bottom: 0;
+        margin: 24px 0 6px 0;
         color: dimgray;
-    } p, ol {
-        font: 12pt/1.4em 'Roboto Serif';
+    } p {
+        font: 12pt/1.45em 'Roboto Serif';
+        list-style: none;
         width: 100%;
-        margin: 4px auto 4px auto;
-    } li {
-        margin: 8px 0 0 0;
-    } ul {
-        font: 12pt/1.4em 'Roboto Serif';
+        margin: 0px auto 4px auto;
     } p.link {
         text-align: center;
         margin-top: 6px;
-    } ul li {
-        margin-top: 3px;
-    } #sidebar {
-        margin: 36px 0 0 24px;
-        border: 1px solid darkgray;
-        box-shadow: 2px 3px 6px darkgray;
-        padding: 12px;
-    } #sidebar p {
-        font: 10pt/1.4em 'Roboto Serif';
     }
 </style>
 </head>
 
 <body>
-    <h1>ePub from InDesign</h1>
+    <h1>Long Document Features of InDesign</h1>
 
     <main>
         <div id="github">
-          <img class="w200" style="margin-top: 0;" src="eBook_1_Document.jpg" />
-          <img class="w200" style="float: right;" src="eBook_2_ParagraphStyles.jpg" />
-          <img class="w360" src="eBook_3_TOCStyle.jpg" />
-          <img class="w360" src="eBook_4_Inline.jpg" />
-          <img class="w360" src="eBook_5_ObjectExportOptions.jpg" />
-          <img class="w360" src="eBook_6_Export.jpg" />
+            <img class="w200" src="1_ID-P_Book.jpg" />
+            <img style="float: right;" class="w200" src="2_ID-P_Library.jpg" />
+            <img class="w360" src="3_ID-DB_TOC.jpg" />
+            <img style="float: right;" class="w200" src="4_ID-P_MasterPages.jpg" />
+            <img class="w360" src="5_ID-DB_SaveAsTemplate.jpg" />
+            <img style="float: right;" class="w200" src="6_ID-P_Styles.jpg" />
+            <img class="w200" src="7_ID-P_Index.jpg" />
        </div>
         <div id="github-instr">
-            <p>ePub is an open standard for eBooks based on XHTML, meaning they are essentially encapsulated web pages. ePubs are easy to create in InDesign and have specific requirements.</p>
-        <ol>
-            <li>In InDesign, create a new document with:
-            <ul style="margin-bottom: 6px;">
-            <li>Size 384&thinsp;&times;&thinsp;512px</li>
-            <li>Uncheck Facing Pages</li>
-            <li>Check Primary Text Frame</li>
-            </ul>
-            Although document size is irrelevant because &ldquo;pages&rdquo; will be made by the eBook reader, the document will appear in InDesign approximately as it will look on an iPad.
-            </li>
-            <li>All text must be styled. Create Paragraph Styles for body text, images, and at least one heading.</li>
-            <li>Set up an automatic table of contents (TOC) style (Layout &gt; Table of Contents Style) with the headings in it. Do not generate text for the TOC; the style will be picked up by the eBook reader.</li>
-            <li>Import the text from a Word or text file. Ideally the text should have styles predefined in Word, which can be mapped to your InDesign Styles.</li>
-            <li>Draw picture boxes with the desired width of your images, then place the images. Select Object &gt; Fitting &gt; Size Content Proportionally, then Size Box to Content. Cut each image to the Clipboard, then place inline in the text using the Text or I-beam tool. Note the anchor icon at the upper right of the image, showing it is inline.</li>
-            <li>InDesign will shrink your images on output. For full-width images, right-click and select Object Export Options. Set the Size to Custom Width 100%.</li>
-            <li>When ready to export your ePub, select File &gt; Export &gt; ePub-Reflowable, specifying your cover graphic, TOC Style, and chapter split options.</li>
-            </ol>
-        <h2>Related Skills</h2>
-        <ul>
-            <li>Editing an ePub in <a href="https://sigil-ebook.com">Sigil</a> to create <a href="https://www.torontomu.ca/~wdp/design-effects/design-effects.html">special effects</a></li>
-            <li>Amazon AZW layout in <a href="https://www.amazon.com/Kindle-Create/b?ie=UTF8&node=18292298011">Kindle Create</a></li>
-            <li>Creating interactive PDF in InDesign</li>
-        </ul>
-        <div id="sidebar">
-        <h2>Recommended ePub Styles</h2>
-    
-        <p>The Paragraph Styles are named after the tags they apply to in XHTML.</p>
-        <h3>p</h3>
-        <p>Basic Character Formats — Palatino Regular 14/auto<br/>
-        Indents and Spacing — 6px Space Before ¶<br/>
-        Keep Options — Keep 2 lines together<br/>
-        Export Tagging — Tag p, Include Classes in HTML, Emit CSS</p>
-        <h3>h1</h3>
-        <p>Basic Character Formats — Palatino Bold 24/auto<br/>
-        Keep Options — Keep with Next, Start ¶ on Next Page<br/>
-        Character Color — Choose color<br/>
-        Export Tagging — Tag h1, Include Classes in HTML, Emit CSS, Split Document
-        </p>
-        <h3>h2</h3>
-        <p>Basic Character Formats — Palatino Bold 18/auto<br/>
-        Keep Options — Keep with Next 2 Lines<br/>
-        Character Color — Choose color<br/>
-        Export Tagging — Tag h2, Include Classes in HTML, Emit CSS
-        </p>
-        <h3>img</h3>
-        <p>Basic Character Formats — Palatino Bold 14/auto<br/>
-        Indents and Spacing — Align Center<br/>
-        Export Tagging — Tag p, Include Classes in HTML, Emit CSS
-        </p>
-        <h3>figcaption</h3>
-        <p>Basic Character Formats — Palatino Italic 12/auto<br/>
-        Indents and Spacing — Left indent 36px, Right indent 36px, Text Align Center<br/>
-        Keep options — Keep with Previous<br/>
-        Export Tagging — Tag p, Include Classes in HTML, Emit CSS
-        </p>
-        </div>
+            <p>Adobe InDesign has a number of features that are useful in designing long documents, such as books, magazines, reports, and the like. Chapters may be saved in separate documents that can be linked together using the Book Palette.</p>
+            
+            <h3>Book Palette</h3>
+            <p>File &gt; New Book (file type .indb). A palette that organizes multiple chapters in individual InDesign documents. The palette can be used to number, print, and save the chapters.</p>
+           <h3>Library</h3>
+            <p>File &gt; New Library (.indl). A floating palette that can be opened in multiple documents and hold commonly used images and text.</p>
+            <h3>Table of Contents</h3>
+            <p>Layout &gt; Table of Contents. A dialog box used to create an automatic table of contents by taking text of specified styles.</p>
+            <h3>Master Pages</h3>
+            <p>Window &gt; Pages. Pages whose content is copied to multiple subsidiary pages. Can hold headers, footers, page numbers, and repeating text.</p>
+            <h3>Templates</h3>
+            <p>File &gt; Save As &gt; Template (.indt). A preformatted document that can be distributed to multiple users. When saved, will prompt the user for a new name, like a Save As dialog box.</p>
+            <h3>Styles</h3>
+            <p>Window &gt; Styles. Includes Paragraph, Character, Object, and Table Styles.</p>
+            <h3>Index</h3>
+            <p>Window &gt; Type and Tables &gt; Index. Designers can designate keywords by hlighting in text and selecting Insert in Index, then an alphabetical list can be generated.d</p>
+            <h3>Tables</h3>
+            <p>Table &gt; Create Table. Useful for organizing text in a grid, designers can insert and delete rows and columns and apply Table Styles with background and border colors and lines.</p>
         </div>
     </main>
 </body>
