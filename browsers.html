@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Long Document Features of InDesign</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto+Serif:wght@300;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<style>
+    * {
+        box-sizing: border-box;
+    } main {
+        width: 1024px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        margin: 48px auto;
+    } img {
+        width: 100%;
+        height: auto;
+        box-shadow: 2px 3px 6px gray;
+        margin-top: 24px;
+    } h1 {
+        font: bold 24pt/1.4em 'Roboto Serif';
+        text-align: center;
+    } h2, figcaption {
+        font: 14pt/1.4em 'Roboto Condensed';
+        text-transform: none;
+        text-align: center;
+        margin-top: 12px;
+        color: dimgray;
+    } h3 {
+        font: 12pt/1.2em 'Roboto Condensed';
+        text-transform: uppercase;
+        text-align: left;
+        margin: 24px 0 6px 0;
+        color: dimgray;
+    } p {
+        font: 12pt/1.45em 'Roboto Serif';
+        width: 70ch;
+        margin: 0px auto 4px auto;
+    } p.link {
+        text-align: center;
+        margin-top: 6px;
+    }
+</style>
+</head>
+
+<body>
+    <h1>Color Management in Browsers</h1>
+    <p>This page demonstrates how web browsers can read ICC color management profiles embedded in images.<br/>
+        &bull; Photos in the first column are in the sRGB color space, while those in the second column are in the larger-gamut Adobe RGB.<br/>
+        &bull; The first row of photos has the profile embedded in the image, while the second row does not.<br/>
+        The original photo was in sRGB and was converted in Photoshop to AdobeRGB using the Edit &gt; Conver to Profile command.<br/> <i>(Photo by Ioann-Mark Kuznietsov on Unsplash.)</i></p>
+    <main>
+        <h2>sRGB</h2>
+        <h2>AdobeRGB</h2>
+        <figure>
+            <img src="1_embed_sRGB.jpg" />
+            <figcaption>sRGB - EMBEDDED PROFILE</figcaption>
+        </figure>
+        <figure>
+            <img src="2_embed_AdobeRGB.jpg" />
+            <figcaption>AdobeRGB - EMBEDDED PROFILE</figcaption>
+        </figure>
+        <figure>
+            <img src="3_noprof_sRGB.jpg" />
+            <figcaption>sRGB - PROFILE NOT EMBEDDED</figcaption>
+        </figure>
+        <figure>
+            <img src="4_noprof_AdobeRGB.jpg" />
+            <figcaption>AdobeRGB - PROFILE NOT EMBEDDED</figcaption>
+        </figure>
+
+    </main>
+</body>
+</html>
