@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>4 Cs of Color Management | Cameras</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto+Serif:wght@300;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<style>
+    * {
+        box-sizing: border-box;
+    } main {
+        width: 778px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 8px;
+        margin: 48px auto;
+    } #github {
+        background: whitesmoke;
+        padding: 12px;
+    } img {
+        width: 200px;
+        height: auto;
+        box-shadow: 2px 3px 6px gray;
+        margin-top: 24px;
+    } img.w200 {
+        width: 240px;
+    } img.w360 {
+        width: 360px;
+    } h1 {
+        font: bold 24pt/1.4em 'Roboto Serif';
+        text-align: center;
+    } h2 {
+        font: 14pt/1.4em 'Roboto Condensed';
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 12px;
+    } h3 {
+        font: 12pt/1.2em 'Roboto Condensed';
+        text-transform: uppercase;
+        text-align: left;
+        margin: 24px 0 6px 0;
+        color: dimgray;
+    } h4 {
+        font: 12pt/1.2em 'Roboto Condensed';
+        margin-bottom: 6px;
+    } h3 a {
+        text-decoration: none;
+        color: dimgray;
+    } h3 a:hover {
+        text-shadow: 2px 3px 6px darkgray;
+        color: red;
+    } p, li {
+        font: 12pt/1.45em 'Roboto Serif';
+        width: 100%;
+        margin: 0px auto 4px auto;
+    } p.link {
+        text-align: center;
+        margin-top: 6px;
+    } figcaption {
+        font: italic 10pt/1.4em 'Roboto Serif';
+        width: 240px;
+        margin-top: 6px;
+    } img.icon {
+        width: 124px;
+        box-shadow: none;
+        margin: 0 0 24px 0;
+    }
+</style>
+</head>
+
+<body>
+    <h1>4 Cs of Color Management</h1>
+
+    <main>
+        <div id="github">
+            <img class="icon" src="camera.png" />
+            <img class="w360" src="colorchecker.jpg"  />
+            <figcaption>Macbeth Colorchecker camera profiling target.</figcaption>
+                <img class="w200" src="gray-before.jpg" />
+            <figcaption>Neutral gray card before setting camera gray balance (white balance). Note yellowish cast.</figcaption>
+            <img class="w200" src="gray-after.jpg" />
+            <figcaption>Neutral gray card after setting camera gray balance (white balance). Note neutral appearance.</figcaption>
+       </div>
+        <div id="github-instr">
+            <p>The 4 Cs model refers to a process for setting up and adjusting color reproduction equipment for the most accurate and consistent color, ensuring that each device performs at its best. The 4 Cs are depicted in a hierarchy where lower steps must be done first. </p>
+            <h3>Cameras | <a href="4cs-monitors.html">Monitors</a> | <a href="4cs-proofers.html">Proofers</a> | <a href="4cs-presses">Presses</a></h3>
+            <ol>
+                <h4>Consistency</h4>
+                <li>Set the camera to Manual Exposure Mode because Automatic will give different settings, therefore inconsistency, for each subject.</li>
+                <li>Make sure lighting is all the same color temperature.</li>
+                <li>Choose the camera's standard working space, if available (usually sRGB or AdobeRGB, Adobe is larger).</li>
+                <li>Set the camera to Manual Exposure mode and set aperture and shutter speed using a standard 15% gray card.</li>
+            </ol>
+            <ul>
+                <h4>Calibration</h4>
+                <li>Set the camera's gray balance to the lighting using a the 15% gray card, which is also colorimetrically neutral.</li>
+            </ul>
+            <ol>
+                <h4>Characterization</h4>
+                <li>Capture the camera profiling target (e.g., Macbeth ColorChecker)</li>
+                <li>Make a camera profile using a profiling program.</li>
+                <li>Select the camera profile in Photoshop (Edit &gt; Assign Profile), in the Camera Raw plugin, or in other software.</li>
+            </ol>
+            <ol>
+                <h4>Conversion</h4>
+                <li>Select the camera profile in Photoshop (Edit &gt; Assign Profile), in the Camera Raw plugin, or in other software.</li>
+                <li>Convert to Standard Working Space (sRGB or AdobeRGB).</li>
+            </ol>
+        </div>
+    </main>
+</body>
+</html>

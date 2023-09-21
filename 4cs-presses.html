@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>4 Cs of Color Management | Presses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto+Serif:wght@300;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<style>
+    * {
+        box-sizing: border-box;
+    } main {
+        width: 778px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 8px;
+        margin: 48px auto;
+    } #github {
+        background: whitesmoke;
+        padding: 12px;
+    } img {
+        width: 200px;
+        height: auto;
+        box-shadow: 2px 3px 6px gray;
+        margin-top: 24px;
+    } img.w200 {
+        width: 240px;
+    } img.w360 {
+        width: 360px;
+    } h1 {
+        font: bold 24pt/1.4em 'Roboto Serif';
+        text-align: center;
+    } h2 {
+        font: 14pt/1.4em 'Roboto Condensed';
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 12px;
+    } h3 {
+        font: 12pt/1.2em 'Roboto Condensed';
+        text-transform: uppercase;
+        text-align: left;
+        margin: 24px 0 6px 0;
+        color: dimgray;
+    } h4 {
+        font: 12pt/1.2em 'Roboto Condensed';
+        margin-bottom: 6px;
+    } h3 a {
+        text-decoration: none;
+        color: dimgray;
+    } h3 a:hover {
+        text-shadow: 2px 3px 6px darkgray;
+        color: red;
+    } p, li {
+        font: 12pt/1.45em 'Roboto Serif';
+        width: 100%;
+        margin: 0px auto 4px auto;
+    } p.link {
+        text-align: center;
+        margin-top: 6px;
+    } figcaption {
+        font: italic 10pt/1.4em 'Roboto Serif';
+        width: 240px;
+        margin-top: 6px;
+    } img.icon {
+        width: 124px;
+        box-shadow: none;
+        margin: 0 0 24px 0;
+    } table {
+        font: 12pt/1.4em 'Roboto Condensed';
+        color: dimgray;
+        width: 380px;
+        margin: 24px auto 0 auto;
+    } td {
+        padding: 1px 4px;
+    } tr {
+        border-bottom: 1px solid dimgray;
+    } aside {
+        background: gainsboro;
+        padding: 8px;
+        margin: 36px auto 0 auto;
+    } aside p {
+        font: 11pt/1.4em 'Roboto Serif';
+        margin-top: 8px;
+    } aside h3 {
+        color: dimgray;
+        margin-top: 0;
+    }
+</style>
+</head>
+
+<body>
+    <h1>4 Cs of Color Management</h1>
+
+    <main>
+        <div id="github">
+            <img class="icon" src="heat-press.png" />
+            <table>
+            <tr style="font-style: italic;">
+                <td>Printing Process</td>
+                <td>Applicable Standard</td>
+            </tr>
+            <tr>
+                <td>Commercial printing</td>
+                <td>GRACoL</td>
+            </tr>
+            <tr>
+                <td>Magazines and Catalogs</td>
+                <td>SWOP</td>
+            </tr>
+            <tr>
+                <td>Newspapers</td>
+                <td>SNAP</td>
+            </tr>
+            <tr>
+                <td>Flexography</td>
+                <td>FIRST</td>
+            </tr>
+            </table>
+            <aside>
+                <h3>Printing Standards</h3>
+                <p>GRACoL&mdash;General Requirements for Applications in Commercial Offset Lithography, used for commercial printing, meaning sheefed offset. Also includes SWOP</p>
+                <p>SWOP&mdash;Specifications for Web Offset Publications, used for web offset printing on coated paper with heated drying, as for magazines and catalogs.</p>
+                <p>SNAP&mdash;Specifications for Nonheatset Advertising Printing, used for newspapers printed on web presses without heated drying.</p>
+                <p>FIRST&mdash;Flexographic Imaging Reproduction Specifications and Tolerances, used for flexo printing.</p>
+            </aside>
+       </div>
+        <div id="github-instr">
+            <p>The 4 Cs model refers to a process for setting up and adjusting color reproduction equipment for the most accurate and consistent color, ensuring that each device performs at its best. The 4 Cs are depicted in a hierarchy where lower steps must be done first. </p>
+            <h3><a href="4cs-cameras.html">Cameras</a> | <a href="4cs-monitors.html">Monitors</a> | <a href="4cs-proofers.html">Proofers</a> | Presses</h3>
+            <ul>
+                <h4>Consistency</h4>
+                <li>Choose an applicable print standard (table at left) and run to the specified ink densities.</li>
+            </ul>
+            <ol>
+                <h4>Calibration</h4>
+                <li>Calibrate the platesetter using the raster image processor (RIP) software and calibration routine.</li>
+                <li>The calibration routine will image a series of tone scales. Measure the tones using a plate-reading densitometer set to read dot area.</li>
+            </ol>
+            <ol>
+                <h4>Characterization</h4>
+                <li>Print a printer profiling target and measure with an automated spectrophotometer.</li>
+                <li>Make the ICC color profile from the measured data.</li>
+            </ol>
+            <ol>
+                <h4>Conversion</h4>
+                <li>Set the press profile as the output profile in the RIP.</li>
+                <li>Or in Photoshop select Edit &gt; Convert to Profile with the press profile.</li>
+            </ol>
+        </div>
+    </main>
+</body>
+</html>

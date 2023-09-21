@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>4 Cs of Color Management | Monitors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto+Serif:wght@300;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<style>
+    * {
+        box-sizing: border-box;
+    } main {
+        width: 778px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 8px;
+        margin: 48px auto;
+    } #github {
+        background: whitesmoke;
+        padding: 12px;
+    } img {
+        width: 200px;
+        height: auto;
+        box-shadow: 2px 3px 6px gray;
+        margin-top: 24px;
+    } img.w200 {
+        width: 240px;
+    } img.w360 {
+        width: 360px;
+    } h1 {
+        font: bold 24pt/1.4em 'Roboto Serif';
+        text-align: center;
+    } h2 {
+        font: 14pt/1.4em 'Roboto Condensed';
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 12px;
+    } h3 {
+        font: 12pt/1.2em 'Roboto Condensed';
+        text-transform: uppercase;
+        text-align: left;
+        margin: 24px 0 6px 0;
+        color: dimgray;
+    } h4 {
+        font: 12pt/1.2em 'Roboto Condensed';
+        margin-bottom: 6px;
+    } h3 a {
+        text-decoration: none;
+        color: dimgray;
+    } h3 a:hover {
+        text-shadow: 2px 3px 6px darkgray;
+        color: red;
+    } p, li {
+        font: 12pt/1.45em 'Roboto Serif';
+        width: 100%;
+        margin: 0px auto 4px auto;
+    } p.link {
+        text-align: center;
+        margin-top: 6px;
+    } figcaption {
+        font: italic 10pt/1.4em 'Roboto Serif';
+        width: 360px;
+        margin-top: 6px;
+    } img.icon {
+        width: 124px;
+        box-shadow: none;
+        margin: 0 0 24px 0;
+    }
+</style>
+</head>
+
+<body>
+    <h1>4 Cs of Color Management</h1>
+
+    <main>
+        <div id="github">
+            <img class="icon" src="desktop.png" />
+            <img class="w360" src="Datacolor-Spyder5-Display-Calibration-Lifestyle-Image.jpg"  />
+            <figcaption>Emissive colorimeter calibrating a monitor with accompanying software.</figcaption>
+       </div>
+        <div id="github-instr">
+            <p>The 4 Cs model refers to a process for setting up and adjusting color reproduction equipment for the most accurate and consistent color, ensuring that each device performs at its best. The 4 Cs are depicted in a hierarchy where lower steps must be done first. </p>
+            <h3><a href="cameras.html">Cameras</a> | Monitors | <a href="4cs-proofers.html">Proofers</a> | <a href="4cs-presses.html">Presses</a></h3>
+            <ol>
+                <h4>Consistency</h4>
+                <li>The monitor should be in a consistently illuminated environment, e.g., away from a window where the illumination could vary with the time of day.</li>
+                <li>If the monitor has hardware controls for brightness and contrast, set to a pleasing levels.</li>
+                <li>Alternatively the calibration program may also have  targets to help you choose the optimum brightness and contrast.</li>
+            </ol>
+            <ol>
+                <h4>Calibration</h4>
+                <li>Attach the colorimeter to the monitor and run the calibration program.</li>
+                <li>The program will show the colorimeter various tone scales and color patches and simultaneously linearize and profile the monitor.</li>
+            </ol>
+            <ol>
+                <h4>Characterization</h4>
+                <li>Save the monitor ICC profile that the calibration program creates.</li>
+                <li>Set as the montior profile in System Settings &gt; Display.</li>
+            </ol>
+            <ul>
+                <h4>Conversion</h4>
+                <li>Photoshop and other programs will automatically read the monitor profile and set it as the destination profile for displayed images.</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

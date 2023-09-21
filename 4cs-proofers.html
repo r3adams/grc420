@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>4 Cs of Color Management | Proofers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto+Serif:wght@300;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<style>
+    * {
+        box-sizing: border-box;
+    } main {
+        width: 778px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 8px;
+        margin: 48px auto;
+    } #github {
+        background: whitesmoke;
+        padding: 12px;
+    } img {
+        width: 200px;
+        height: auto;
+        box-shadow: 2px 3px 6px gray;
+        margin-top: 24px;
+    } img.w200 {
+        width: 240px;
+    } img.w360 {
+        width: 360px;
+    } h1 {
+        font: bold 24pt/1.4em 'Roboto Serif';
+        text-align: center;
+    } h2 {
+        font: 14pt/1.4em 'Roboto Condensed';
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 12px;
+    } h3 {
+        font: 12pt/1.2em 'Roboto Condensed';
+        text-transform: uppercase;
+        text-align: left;
+        margin: 24px 0 6px 0;
+        color: dimgray;
+    } h4 {
+        font: 12pt/1.2em 'Roboto Condensed';
+        margin-bottom: 6px;
+    } p, li {
+        font: 12pt/1.45em 'Roboto Serif';
+        width: 100%;
+        margin: 0px auto 4px auto;
+    } p.link {
+        text-align: center;
+        margin-top: 6px;
+    } figcaption {
+        font: italic 10pt/1.4em 'Roboto Serif';
+        width: 340px;
+        margin-top: 6px;
+    } h3 a {
+        text-decoration: none;
+        color: dimgray;
+    } h3 a:hover {
+        text-shadow: 2px 3px 6px darkgray;
+        color: red;
+    } img.icon {
+        width: 124px;
+        box-shadow: none;
+        margin: 0 0 24px 0;
+    }
+</style>
+</head>
+
+<body>
+    <h1>4 Cs of Color Management</h1>
+
+    <main>
+        <div id="github">
+            <img class="icon" src="inkjet1.png" />
+            <img class="w360" src="Colour-Test-Page3-1024x820.png" />
+            <figcaption>Test chart for inkjet printers, includes tone scales and solid ink patches.</figcaption>
+            <img class="w360" src="it874-digital-test.jpg" />
+            <figcaption>IT8.7/4 color profiling target for printers.</figcaption>
+            <img class="w360" src="it7.7-2-randomized.jpg" />
+            <figcaption>Randomized version of the IT8.7/4 color target, designed so that ink distribution will not have as much impact on the color patches.</figcaption>
+        </div>
+        <div id="github-instr">
+            <p>The 4 Cs model refers to a process for setting up and adjusting color reproduction equipment for the most accurate and consistent color, ensuring that each device performs at its best. The 4 Cs are depicted in a hierarchy where lower steps must be done first. </p>
+            <h3><a href="4cs-cameras.html">Cameras</a> | <a href="4cs-monitors.html">Monitors</a> | Proofers | <a href="4cs-presses.html">Presses</a></h3>
+            <ul>
+                <h4>Consistency</h4>
+                <li>Print an ink limits chart and set the ink limit as a percent. Inkjet printers "spit" droplets of ink onto the page, so it's easy to apply too much ink to the point that it puddles and runs off the page. The correct ink limit varies with the ink and substrate.</li>
+            </ul>
+            <ul>
+                <h4>Calibration</h4>
+                <li>Print a tone scale of halftone dots, 0 to 100% in 5% or 10% increments, measure with a spectrophotometer set to dot area, and enter the readings into the calibration program, which is usually built into the raster image processor (RIP) or operating software.</li>
+            </ul>
+            <ol>
+                <h4>Characterization</h4>
+                <li>Print a color management profiling target, such as the IT8.7/4, and measure with an automated spectrophotometer.</li>
+                <li>Enter the color readings into the profiling program and create the ICC profile.</li>
+            </ol>
+            <ol>
+                <h4>Conversion</h4>
+                <li>Select the proofer output profile in the RIP, or operating software.</li>
+                <li>You may set a simulation profile, which is how you would like the prints to look (e.g., to look like lithographic printing).</li>
+            </ol>
+        </div>
+    </main>
+</body>
+</html>
