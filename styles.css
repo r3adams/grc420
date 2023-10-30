@@ -1,0 +1,84 @@
+	body {
+   		margin: 0;
+   		padding: 0;
+        font: 14pt/1.4em Georgia;
+	} h1 {
+	    font: 36pt/1.4em Lobster, cursive;
+   		text-shadow: 1px 1px 0px black;
+   		color: #c00;
+	} h3 {
+        font: 12pt/1.4em Georgia;
+	} #holder {
+   		padding: 50px;
+   		width: 928px;
+   		margin: 0 auto;
+   		text-align: center;
+    } #text {
+        font: 14pt/1.4em Georgia;
+        width: 70ch;
+        margin: 24px auto;
+        text-align: left;
+	} #container {
+		width: 800px;
+		height: 400px;
+		margin: 48px auto;
+	} .box {
+		width: 100px;
+		height: 100px;
+		background: yellow;
+		border: 1px solid black;
+		border-radius: 25px;
+		margin: 6px auto;
+	} .box p {
+        font: 24pt/1.05em Lobster;
+		text-align: center;
+		text-shadow: 2px 1px 0px white;
+	} #box-1 {
+		background: yellow;
+	} #box-2 {
+		background: orange;
+	} #box-3 {
+		background: palegreen;
+	} #box-4 {
+		background: paleturquoise;
+	} #box-5 {
+		background: plum;
+	} #box-6 {
+		background: goldenrod;
+        position: relative;
+    } #box-7, #box-8, #box-9 {
+        background: lightyellow;
+	} #box-10 {
+		background: lavender;
+	} .column {
+		float: left;
+		width: 120px;
+		margin: 6px 6px;
+	} button {
+   		font-family: Helvetica;
+		font-weight: bold;
+   		padding: 10px;
+   		border-radius: 10px;
+   		color: white;
+   		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	} #up {
+		width: 53px;
+		background: orange;
+	} #down {
+		width: 62px;
+		background: limegreen;
+	} #column-1 button {
+		background: darkred;
+	} #column-2 button {
+		background: darkgreen;
+	} #column-3 button {
+		background: darkblue;
+	} #column-5 button {
+		background: goldenrod;
+    } #column-6 button {
+        background: purple;
+	} button:hover {
+		box-shadow: 3px 2px 2px #ccc;
+}
