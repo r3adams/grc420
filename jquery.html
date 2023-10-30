@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<title>jQuery Tutorial</title>
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='styles.css' rel='stylesheet' type='text/css'>
+<script   src="https://code.jquery.com/jquery-3.7.1.min.js"   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script   src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"   integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0="   crossorigin="anonymous"></script>
+<style>
+	/* We are using the ID with the class to override the #box CSS in styles.css */
+	  .new-color {
+		background: lightblue !important;
+		color: white;
+		text-shadow: 2px 1px 3px grey !important;
+
+	 /* Makes animations happen with CSS */
+		transition: all 1s ease;
+	}
+
+</style>
+</head>
+
+<body>
+<!---=== Container • Centers Content ===--->
+
+<!---=== Description ===--->
+<div id="holder">
+	<h1>jQuery JavaScript Library</h1>
+	<h3>Demo by Ahmed (Am) Sagarwala (GCM '08, MDM '15)<br/><i>Associate Dean, Interactive Design, Humber College, Toronto</i></h3>
+    <div id="text">
+	<p>The JavaScript programming language adds interactivity to web sites. <a href="http://jquery.org" target="_blank">jQuery</a>, a library of JavaScript functions curated by MIT and used in three-fourths of the one million most popular web sites, provides numerous functions for creating interactive effects.</p>
+	<p>Use the buttons below to invoke an action, or drag-and-drop Sortable and Draggable.</p>
+    </div>
+<div id="container">
+
+<!---=== Column 1 ===--->
+<div id="column-1" class="column">
+	<button id="fade">Fade In/Out</button>
+    <div class="box" id="box-1"><p>Box 1</p></div>
+</div>
+<!---=== Column 2 ===--->
+<div id="column-2" class="column">
+	<button id="change-color">Change Colour</button>
+    <div class="box" id="box-2"><p>Box 2</p></div>
+</div>
+<!---=== Column 3 ===--->
+<div id="column-3" class="column">
+	<button id="slide">Slide Up/Down</button>
+    <div class="box" id="box-3"><p>Box 3</p></div>
+    <div class="box" id="box-4"><p>Box 4</p></div>
+    <div class="box" id="box-5"><p>Box 5</p></div>
+</div>
+<!---=== Column 4 ===--->
+<div id="column-4" class="column">
+	<button id="down">Down</button>
+	<button id="up">Up</button>
+    <div class="box" id="box-6"><p>Box 6</p></div>
+</div>
+
+<!---=== Column 5 ===--->
+<div id="column-5" class="column">
+	<button id="sort">Sortable</button>
+    <div class="box" id="box-8"><p>Box 8</p></div>
+    <div class="box" id="box-7"><p>Box 7</p></div>
+    <div class="box" id="box-9"><p>Box 9</p></div>
+</div>
+    
+<!---=== Column 6 ===--->
+<div id="column-6" class="column">
+	<button>Draggable</button>
+    <div class="box" id="box-10"><p>Box 10</p></div>
+</div>
+</div>
+</div>
+    
+<!--== Insert Link for jQuery and jQueryUI Libraries ==-->
+
+<script type="text/javascript">
+	// This code makes jQuery run when the document loads
+	$(function() {
+		// ---=== Box 1 ===---
+		// Action: Toggle the target to fade in/out
+		// Selector: ID "button-fade"
+		// Event: Click
+		// Target: ID "box"
+		$('#fade').click(function() {
+			$("#box-1").fadeToggle(3000);
+			// Can specify number or "slow" or "fast" or time in milliseconds (3000 = 3s)
+		});
+
+		// ---=== Box 2 ===---
+		// Action: Toggle target to change color by switching class applied
+		// Selector:
+		// Event:
+		// Target:
+		$('#change-color').click(function() {
+	 		$("#box-2").toggleClass("new-color"); // 1,000 miliseconds = 1 second
+		});
+
+		// ---=== Boxes 3, 4, 5 ===---
+		// Action: Toggle boxes 3, 4, and 5 to slide up and down
+		// Selector:
+		// Event:
+		// Target:
+		$('#slide').click(function() {
+	 		$("#box-3, #box-4, #box-5").slideToggle(1000); 
+		});
+
+		// ---=== Box 6 ===---
+		// Action: Animate Box 6 to slide down 216px
+		// Selector:
+		// Event:
+		// Target:
+		$('#down').click(function() {
+	 		$("#box-6").animate({top: '+=215px'}, 1000);
+            $("#down").prop('disabled', true);
+            $("#down").css('background','gray');
+            $("#up").prop('disabled', false);
+            $("#up").css('background','orange');
+		});
+		$('#up').click(function() {
+	 		$("#box-6").animate({top: '-=215px'}, 1000);
+            $("#up").prop('disabled', true);
+            $("#up").css('background','gray');
+            $("#down").prop('disabled', false); 
+            $("#down").css('background','limegreen');
+		});
+		// ---=== Boxes 7, 8, and 9 ===---
+		// Action: Sortable
+		// Target:
+		$('#column-5').sortable();
+        
+		// ---=== Box 10 ===---
+		// Action: Draggable
+		// Target:
+		$('#box-10').draggable();
+    });
+</script>
+</body>
+</html>
