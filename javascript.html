@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript &ldquo;Fireside Chat&rdquo;</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto+Serif:wght@300;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<style>
+    body {
+        background: whitesmoke;
+        font: 14pt/1.4em 'Roboto Serif';
+    } #page {
+        width: 928px;
+        background: white;
+        margin: 24px auto;
+        padding: 24px;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } #textbox {
+        width: 768px;
+        // background: lavender;
+        margin: 0 auto;
+    } h1 {
+        text-align: center;
+        margin-bottom: 48px;
+    } h2 {
+        font: 14pt/1.4em 'Roboto Condensed';
+        text-transform: uppercase;
+        margin-top: 36px;
+    } li {
+        margin-top: 12px;
+    } span {
+        font: 14pt/1.4em Courier, monospace;
+        text-indent: 1.5em;
+        display: inline-block;
+    } button {
+        padding: 12px;
+        background: aquamarine;
+        margin: 0 auto;
+        display: block;
+        border: none;
+        border-radius: 12px;
+    } button:hover {
+        opacity: 0.67;
+    } a {
+        text-decoration: none;
+    }
+</style>
+</head>
+
+<body>
+<div id="page">
+<div id="textbox">
+<h1>JavaScript Fireside Chat</h1>
+<a href="fireside-chat.zip"><button>Download Fireside Chat File</button></a>
+<h2>Using a Variable, Conditional Statement, and Function</h2>
+<p>In this section we will see how to write JavaScript code, include a conditional statement, and place the code into a function so it can be used multiple times.</p>
+<ol>
+    <li>Open the starter document for the “Fireside Chat.”</li>
+    <li>Inside the &lt;div id="livearea"&gt;, place opening and closing &lt;script&gt; tags and add the code:<br/>    
+    <span>document.write("Welcome to the Fireside Chat web page.");</span><br/>
+    Note that the text is written below the heading.</li>
+    <li>Add opening and closing &lt;p&gt; tags inside the quotes. Add a style statement and style the text as you like.</li> 
+    <li>Above the "document.write" line, add a variable statement to hold the reader's name:<br/>
+    <span>var name=prompt("Please type your name.");</span></li>
+    <li>Add the variable name to the statement by placing it outside the quotes and connecting it to the text with “+” signs:<br/> 
+    <span>document.write("&lt;p style="font-family: Georgia;"&gt;Welcome to the Fireside Chat web page, " + name + "&lt;/p&gt;");</span></li> 
+    <li>If the reader does not type a name, the statement will print with a blank. To prevent the statement from printing if the user does not enter a name, place the “document.write” statement in a conditional “if” statement:<br/> 
+    <span>if (name!="") {<br/>
+         document.write("&lt;p style="font-family: Georgia;"&gt;Welcome to the Fireside Chat web page, " + name + "&lt;/p&gt;");<br/>
+        }</span></li>
+    <li>To make a function out of the statements, add opening and closing &lt;script&gt; tags to the &lt;head&gt;.</li>
+    <li>Create the function by writing:<br/> 
+    function writeName() {<br/>
+        place code here<br/> 
+    }</li>
+    <li>Call the function by keeping the &lt;script&gt; tags in the &lt;body&gt; and writing:<br/>
+    <span>writeName();</span></li>
+</ol>
+<h2>Making a Print Button</h2>
+<p>In this section we will create a function to print the page and link it to a button. Adding an “@media” query will enable fitting the document on a letter-size page and omitting the buttons from the print.</p>
+<ol>
+    <li>Program the button at the bottom of the page to print the page.</li> 
+    <li>Add a function to the &lt;script&gt; tag in the &lt;head&gt;:<br/>
+    <span>function printPage() {<br/>              this.window.print();<br/>
+    }</span></li> 
+    <li>Call the printPage function by linking it to the “Print” button:<br/> 
+    <span>&lt;button onClick="printPage()"&gt;Print&lt;/button&gt;</span></li> 
+    <li>Add an @media print {} query to confine the page to 8.5x11" and hide the buttons in the print view:<br/>
+    <span>@media print {<br/>
+        body {<br/>
+	  	transform: scale(0.85);<br/> 
+        } #page {<br/>
+        width: 8.25in;<br/>
+        height: 10.0in;<br/>
+        } footer {<br/>
+        display: none;<br/> 
+        }</span></li>
+    </ol>
+ 
+<h2>Using Buttons to Change Color</h2> 
+    <p>In this section we will link a button to a function to change color of the text.</p>
+    <ol>
+    <li>In the &lt;script&rt; tag in the head, add a function to change color of the div “livearea”:<br/>
+ 	<span>function colorGrey() {<br/> 
+        document.getElementById("livearea").style.color="dimgray";<br/> 
+        }</span></li> 
+    <li>Link the function to the “Grey” button:<br/>
+    <span>&lt;button&gt; onClick="colorGrey()"&gt;Grey&lt;/button&gt;</span></li> 
+    <li>Create a similar function to change the text color back to black.</li>
+    </ol>
+</div>
+</div>
+</body>
+</html>
