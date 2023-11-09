@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hot Air Ballooning</title>
+<link href="Zapfino.ttf" rel="stylesheet">
+<style>
+    #banner {
+        width: 1024px;
+        display: block;
+        margin: 0 auto;
+    } h1 {
+        font-family: Zapfino, cursive;
+        text-align: center;
+    } .body {
+        font: 14pt/1.4em Georgia;
+        width: 900px;
+    } figcaption {
+        font: italic 12pt/1.4em Georgia;
+    } #links {
+        font-family: Georgia;
+        font-size: 14pt;
+        line-height: 1.4em;
+        text-align: center;
+    } .img-fl-left {
+        width: 288px;
+        float: left;
+        margin: 0 24px 0 0;
+    } #midbody {
+        width: 900px;
+        height: 564px;
+        margin: 24px auto;
+    } #lowerbody {
+        width: 900px;
+        height: 128px;
+        margin: 24px auto;
+    } .balloon {
+        width: 150px;
+        position: absolute;
+        animation-name: flyup;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-play-state: running;
+        z-index: 1;
+    } #balloon-red {
+        left: 70px;
+        top: 90vh;
+    } #balloon-green {
+        left: 110px;
+        top: 87vh;
+        animation-delay: 0.7s;
+    } #balloon-blue {
+        left: 150px;
+        top: 90vh;
+        animation-delay: 1.4s;
+    } #flame {
+        width: 50px;
+        position: absolute;
+        left: 75px;
+        top: 100vh;
+    } @keyframes flyup {
+        0% {}
+        5% {transform: rotateZ(-3deg);}
+        10% {transform: rotateZ(3deg);}
+        15% {transform: rotateZ(0deg);}
+        100% {top: -20vh;}
+    }
+</style>
+<!--
+Photo credits
+Photo by Daniela Cuevas on Unsplash
+Photo by Andre Frueh on Unsplash
+Photo by Bryce Boehler on Unsplash
+-->
+</head>
+
+<body>
+    <div id="balloonhype_hype_container" class="HYPE_document" style="margin:auto;position:relative;width:1024px;height:296px;overflow:hidden;">
+	<script type="text/javascript" charset="utf-8" src="balloon-hype.hyperesources/balloonhype_hype_generated_script.js?10347"></script>
+	</div>
+    <div id="midbody">
+        <h1>Animation</h1>
+                
+    <p class="body">
+        <img class="img-fl-left" src="andre.jpg" />
+        Moving page elements can be designed using cascading style sheets (CSS), with the a named @keyframes rule and accompanying animation styles. The @keyframes rule specifies the position of an animated object as percent of completion. The rule is then attached to an object by its name and the desired duration of the animation.</p>
+        <p class="body">Limited user control can be provided using the "hover" and "active" pseudoclasses, which affect the style when the mouse is over the object or is clicked on the object.</p>
+        <p class="body">Animations can be very eye-catching but can also be distracting if repeated multiple times. On this page, the three balloons were animated with CSS, while the balloon in the banner was animated with the program Tumult Hype.</p>
+        <p class="body"><i>Banner image by Daniela Cuevas and text image by Andre Frueh, both on Unsplash. Balloon icon by Mohsen on PNGTree.</i></p>
+    </div>
+    <div id="lowerbody">
+        <img class="balloon" id="balloon-red" src="balloon-red.png" />
+        <img class="balloon" id="balloon-green" src="balloon-green.png" />
+        <img class="balloon" id="balloon-blue" src="balloon-blue.png" />
+    </div>
+</body>
+</html>
