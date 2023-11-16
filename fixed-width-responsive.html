@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fixed-Width Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+    @font-face {
+        font-family: Zapfino;
+        src: url("Zapfino.ttf");
+    } @font-face {
+        font-family: Bergamot-Ornaments;
+        src: url("BergamotOrnaments.ttf");
+    } * {
+        margin: 0;
+        padding: 0;
+    } body {
+        background: whitesmoke;
+    } #page {
+        width: 1024px;
+        max-width: 100%;
+        height: auto;
+        background: white;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+        margin: 24px auto;
+    } #textbox {
+        width: 768px;
+        max-width: 95%;
+        height: auto;
+        min-height: 768px;
+        margin: 48px auto;
+        border: 1px dashed gray;
+        // background: pink;
+    } header img {
+        width: 1024px;
+        max-width: 100%;
+    } header h1 {
+        font: 48pt/1.4em 'Dancing Script';
+        text-align: center;
+        margin: 48px 0 0 0;
+        padding-top: 36px;
+        color: brown;
+        text-shadow: 2px 3px 6px darkgray;
+    } p {
+        font: 14pt/1.4em Georgia;
+    } img.float-left {
+        width: 300px;
+        float: left;
+        margin: 0 24px 0 0;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } header ul {
+        width: 1024px;
+        max-width: 100%;
+        margin-bottom: 36px;
+    } header ul li {
+        width: 50%;
+        height: 42px;
+        float: left;
+        text-align: center;
+        list-style: none;
+        font: 14pt/2.1em Roboto;
+        color: white;
+        background: rgba(175,102,0,1.00);
+    } header ul a li:hover {
+        background: rgba(175,102,0,0.67);
+    } @media only screen and (max-width: 750px) {
+        img.float-left {
+            float: none;
+            width: 95vw;
+            margin-bottom: 24px;
+        } p {
+            font: 18pt/1.5em Georgia;
+        } header ul li {
+            float: none;
+            width: 100%;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <img src="daniela.jpg" />
+             <ul>
+                <li>Home</li>
+                <a href="#"><li>Excursions</li></a>
+            </ul>
+           <h1>Hot Air Ballooning</h1>
+        </header>
+     <div id="textbox">
+        <p>
+            <a href="andre.jpg"><img class="float-left" src="andre.jpg" /></a>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+     </div>
+   </div>
+</body>
+</html>
