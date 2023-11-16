@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript &ldquo;Fireside Chat&rdquo;</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto+Serif:wght@300;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<style>
+    @font-face {
+        font-family: 'Bergamot Ornaments';
+        src: url("BergamotOrnaments.ttf");
+    } body {
+        background: whitesmoke;
+        font: 14pt/1.4em 'Roboto Serif';
+    } #page {
+        width: 928px;
+        height: auto;
+        background: white;
+        margin: 24px auto;
+        padding: 24px;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } #textbox {
+        width: 768px;
+        height: auto;
+        min-height: 1524px;
+        margin: 0 auto;
+    } aside {
+        width: 768px;
+        margin: 24px auto;
+        background: whitesmoke;
+        padding: 3px;
+    } h1, h2 {
+        text-align: center;
+    } h3 {
+        font: 14pt/1.4em 'Roboto Condensed';
+        text-align: center;
+        text-transform: uppercase;
+    } li {
+        margin-top: 6px;
+    } span.code {
+        font: 14pt/1.4em Courier, monospace;
+        text-indent: 1.5em;
+        display: inline-block;
+    } img.float {
+        width: 300px;
+        float: left;
+        margin: 0 24px 0 0;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } img.float2 {
+        width: 164px;
+        float: left;
+        margin: 0 24px 0 0;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } p.ornament {
+        font: 36pt/1.0em 'Bergamot Ornaments';
+        text-align: center;
+        margin: 24px;
+    }
+</style>
+</head>
+
+<body>
+<div id="page">
+<div id="textbox">
+<h1>Responsive Design</h1>
+<h2>in Three Easy Steps</h2>
+<p>Responsive design uses variable, maximum, and minimum width specifications to make photos and text fit into whatever browser window size the user sets, whether on a desktop, laptop, tablet, or smartphone.</p>
+<aside>
+    <h3>The Steps</h3>
+    <ol>
+        <li>Can I specify width in % or vw?</li>
+        <li>If not, can I add the supplemental style, &ldquo;max-width&rdquo;?</li>
+        <li>Can I add a media query to change how photos and text appear on smartphones less than a specified resolution?</li>
+    </ol>
+</aside>
+<p><img class="float" src="1b_balloon-page-outline-annotated.jpg" />In this <a href="fixed-width-responsive.html" target="_blank">example</a> of a fixed-width or &ldquo;print replica&rdquo; page, the page width has been set to 1024px so it approximates a sheet of letter-size paper on-screen. The page includes a banner image, also 1024px wide, a text box (div) of 768px, and a floated image of 300px.</p>
+<p><b>Can I specify width in % or vw?</b><br/>To retain the letter-size page appearance, these tag widths cannot be specfied in percent or vw (viewport widths).</p>
+<p><b>Can I add &ldquo;max-width&rdquo;?</b><br/>The supplemental style, &ldquo;max-width: 100%;&rdquo; can be added so that the page contracts to fit within smaller browser window sizes.</p>
+<p><b>Can I add a media query?</b><br/>
+For smartphones it would be nice to have the floated image full-width and to enlarge the text, and to increase the line leading of the text.</p>
+<p class="ornament">=</p>
+<p><img class="float2" src="2_catalog-page-3c.jpg" /><img class="float2" src="3_catalog-page-1c.jpg" />This <a href="grid-layout.html" target="_blank">example</a> shows a mockup of a catalog page that uses a 3-column grid layout (grid-template-columns: auto auto auto;), columns in green and future catalog items in orange.</p>
+<p>For the smartphone media query, the column number was changed to 1 (grid-template-columns: auto;) and the item width was set to 80vw (viewport widths).
+
+</p>
+</div>
+</div>
+</body>
+</html>
