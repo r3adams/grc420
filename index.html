@@ -28,6 +28,20 @@
 			text-align: center;
 			line-height: 1.0em;
             color: black;
+        } ul {
+            width: 100%;
+        } ul li {
+            width: 25%;
+            height: 40px;
+            list-style: none;
+            float: left;
+            text-align: center;
+            font: 14pt/2.2em Roboto;
+            background: lightblue;
+        } ul li:hover {
+            background: rgba(173,216,230,0.50);
+        } ul a {
+            color: black;
 		} #page {
 			width: 1228px;
 			max-width: 100%;
@@ -41,6 +55,8 @@
             margin: 0 auto 24px auto;
             font: italic 14pt/1.4em Roboto;
             text-align: left;
+		} #header p {
+			margin: 36px auto;
 		} #flexbox {
 			width: 1228px;
 			max-width: 90%;
@@ -75,8 +91,14 @@
     <body>
 	 <div id="banner">
 		<h1>Catalog of Web Pages</h1>
-		<h3>GRC 420 &bull; Rich Adams</h3>
 	 </div>
+	     <ul>
+         <a href="https://r3adams.github.io/grc365/welcome.html"><li>Home</li></a>
+         <li>UNLV GRC 365 Web</li>
+         <a href="https://r3adams.github.io/grc420/index.html"><li>UNLV GRC 420 Design &amp; Media</li></a>
+         <a href="https://r3adams.github.io/gcea/gcea.html"><li>GCEA</li></a>
+        </ul>
+
 	<div id="page">
     <div id="header">
     <p>These web pages were created for UNLV GRC 420 Design &amp; Media Studio III class. Click on the thumbnail to go to the respective web page.</p>
