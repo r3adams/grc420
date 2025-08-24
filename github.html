@@ -3,8 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Using Github as a Web Server</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto+Serif:wght@300;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
 <style>
     * {
@@ -63,6 +61,18 @@
         transition: background 0.67s;
     } a {
         text-decoration: none;
+    } table {
+        width: 778px;
+        font: 12pt/1.4em 'Roboto Serif';
+        border-collapse: collapse;
+        border: 1px solid darkgray;
+        margin: -24px auto 48px auto;
+    } tr:nth-child(odd) {
+        background: aliceblue;
+    } tr:nth-child(-n+2) {
+        font-weight: bold;
+    } td {
+        padding: 3px 6px;
     }
 </style>
 </head>
@@ -108,10 +118,45 @@
             <ol>
                 <li>After uploading your files to a Repository, click the Settings button at the top, Pages at left, and scroll down to Select "main" as the deployment.</li>
                 <li>To delete a file, click on the file. From the three dots at right, select Delete File.</li>
-                <li>To delete a repository, go to the repository, select Settings, and scroll down to "Danger Zone" > Delete this repository.</li>
+                <li>To delete a repository, go to the repository, select Settings, and scroll down to "Danger Zone" &gt; Delete this repository.</li>
             </ol>
             </div>
-
     </main>
+<table>
+  <tr>
+    <td colspan="2">Quick-Reference Guide to Github</td>
+  <tr>
+    <td>Task</td>
+    <td>Path</td>
+  </tr>
+  <tr>
+    <td>Create Repository (Folder)</td>
+    <td>Home &gt; Repositories &gt; New</td>
+  </tr>
+  <tr>
+    <td>Delete Repository</td>
+    <td>Click on repository &gt; Settings &gt; Delete this repository</td>
+  </tr>
+  <tr>
+    <td>Rename Repository</td>
+    <td>Repository &gt; Settings &gt; Rename</td>
+  </tr>
+  <tr>
+    <td>Make Repository Viewable</td>
+    <td>Repository &gt; Pages &gt; Source &gt; Deploy from a branch &gt; Main</td>
+  </tr>
+  <tr>
+    <td>Add Files to Repository</td>
+    <td>Repository &gt; Add File</td>
+  </tr>
+  <tr>
+    <td>URL for your files</td>
+    <td>github.com/[userid]/[repository-name]</td>
+  </tr>
+  <tr>
+    <td>URL for your page</td>
+    <td>[userid].github.io/[repository-name]</td>
+  </tr>
+</table>
 </body>
 </html>
